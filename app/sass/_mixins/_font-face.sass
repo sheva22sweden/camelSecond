@@ -1,0 +1,73 @@
+@mixin_btn
+   	width: 355px
+   	color: red
+   	height: 49px
+   	margin-top: 20px
+   	border: none
+   	background-color: transparent
+   	a
+   		max-width: 355px
+	    height: 47px
+	    display: block
+	    background: $color_extra
+	    border: 1px solid $link-color_header
+	    border-radius: 9px
+	    color: $link-color_header
+	    font-size: 18px
+	    text-align: center
+	    text-decoration: none
+	    line-height: 47px
+	    text-transform: uppercase
+	    padding: 0 5px
+	    &:hover
+	    	box-shadow: 0 0 20px red
+	    	transition: 1s
+	    	color: $color-text_header
+
+@mixin_submit
+    border-radius: 9px
+    border: 1px solid $link-color_header
+    color: $link-color_header
+    font-size: 18px
+    background: $color_extra
+    line-height: 45px
+    text-transform: uppercase
+    max-width: 355px
+    padding: 0 53px
+    text-align: center
+    text-decoration: none
+    
+
+@mixin_tooltips
+    border-radius: 6px
+    color: #fff
+    text-align: center
+    padding: 5px 0
+    position: absolute
+    z-index: 1
+    left: -9%
+    margin-left: -60px
+    width: 120px
+    background: $bg-tooltips
+    visibility: hidden
+
+@mixin_tooltipsarows
+	border: 5px solid
+	border-color: transparent transparent transparent black	
+	position: absolute
+	margin-top: -5px
+	content: ""
+
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+	@font-face
+		font-family: $font-family
+		font-weight: $weight
+		font-style: $style
+
+		@if $asset-pipeline == true 
+			src: font-url('#{$file-path}.eot')
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
+		@else
+			src: url('#{$file-path}.eot')
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')

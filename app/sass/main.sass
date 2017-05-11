@@ -1,0 +1,459 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+h2
+	color: $color-text_title
+	font-size: 36px
+	font-family: "gostB"
+	text-transform: uppercase
+	margin: 0 0 84px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.container-fluid 
+	padding: 18px 0 0 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.submit
+	@include_submit
+	&:hover
+		box-shadow: 0 0 20px $color_extra
+		color: $color-text_header
+		transition: 1s
+
+.container-inner 
+	max-width: 1025px
+	margin: 0 auto
+.top__flex
+	display: flex
+	justify-content: space-between
+	.logo
+		flex-basis: 30%
+	.phone-number
+		flex-basis: 30%
+.phone-number 
+	text-align: right
+	a
+		color: $color-text_header
+		font-family: "Lato", sans-serif
+		font-size: 1em
+		span
+			font-size: 1.5em
+			margin-left: 5px
+
+.header-sub 
+	background: url(../img/headerbg.png) repeat-x
+
+.header-list 
+	ul 
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		list-style: none
+		padding: 0;
+		margin: 10px 0 0 0
+		height: 47px
+		li
+			padding: 5px 55px
+			border-left: 1px solid #fff
+			text-align: center
+			a
+				color: $link-color_header
+				font-weight: 100
+
+.header-list
+	ul
+		li
+			&:last-child
+				border-right: 1px solid #fff
+
+.important__link 
+	font-family: "helveticaneu"
+
+.conteiner-title 
+	background: url(../img/bg.jpg) no-repeat top center
+	background-size: cover
+	padding: 100px 0 40px
+	.title__modal 
+		    padding: 45px
+    		background-color: #fff
+    		max-width: 490px
+    		border-radius: 10px
+    		text-align: center
+    		margin-left: 10px
+    		font-family: $fontB
+    		color: $color-text_title
+    		h1
+    				margin: 0
+    				font-size: 48px
+    				text-transform: uppercase
+    				font-weight: 100
+    				span
+    					color: $color_extra
+    		.data, .time
+    			font-size: 28px
+    			margin: 0
+    		.time
+    			span
+    				color: $color_extra
+    		
+.conteiner-title
+	.btn
+		@include_btn
+
+.conteiner-item 
+	background: $item_bg
+	padding: 70px 0 0 0
+	p
+		color: $color_extra
+		font-family: gostB
+		font-size: 38px
+		margin: 0
+		line-height: 1.2
+
+.benefit
+	text-align: center
+	padding-top: 80px
+	h2
+		margin-bottom: 40px
+	.list__benefit
+		list-style: none
+		li
+			i
+				display: inline-block
+				width: 30px
+				height: 30px
+				background: url(../img/icons.png) -35px 10px
+
+.conteiner-features
+	text-align: center
+	background: $item_bg
+	border-top: 1px solid $border-color
+	border-bottom: 1px solid $border-color
+	padding: 104px 0 95px
+	
+	.img__clock, .img__export, .img__users, .img__eye
+		background: url(../img/spritesheet.png) -3px -3px
+		width: 120px
+		height: 120px
+
+	.img__export
+		background: url(../img/spritesheet.png) -129px -3px
+	.img__users
+		background: url(../img/spritesheet.png) -129px -129px
+	.img__eye
+		background: url(../img/spritesheet.png) -3px -129px
+
+.flexible 
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.conteiner-features
+	.btn
+		position: relative
+		@include_btn			
+		&:before
+		    display: block
+		    content: ''
+		    position: absolute
+		    background: url(../img/Arrright.png) no-repeat
+		    width: 70px
+		    height: 60px
+		    left: -100px
+		    top: -20px
+		&:after
+		    display: block
+		    content: ''
+		    position: absolute
+		    background: url(../img/Arrleft.png) no-repeat
+		    width: 70px
+		    height: 60px
+		    left: 400px
+		    top: -20px
+
+.conteiner-structure 
+	text-align: center
+	padding: 80px 0
+	.click, .people, .case, .rocket
+		width: 45px
+		height: 65px
+		background: url(../img/spritesheets.png) no-repeat -62px 10px
+	.people
+		width: 49px
+		background: url(../img/spritesheets.png) no-repeat -3px -66px
+	.case
+		width: 57px
+		background: url(../img/spritesheets.png) no-repeat -3px 10px
+	.rocket
+		width: 45px
+		background: url(../img/spritesheets.png) no-repeat -60px 10px
+
+.conteiner-coach 
+	background: url(../img/natali.jpg) no-repeat top center
+	background-size: cover
+	border-top: 1px solid $border-color
+	border-bottom: 1px solid $border-color
+	padding: 75px 0 0
+.trainer
+	margin-left: 50%
+	margin-bottom: 60px
+	h2
+		margin: 0
+	p
+		font-size: 36px
+		margin: 0 0 45px
+		text-transform: uppercase
+		color: $color_extra
+
+.conteiner-form
+	text-align: center
+	padding-top: 75px
+	h2
+		margin-bottom: 30px
+
+.fieldset
+	border: none
+	#user_birthday, #user_email, #user_name, #user_phone
+		width: 430px
+		height: 41px
+		margin-bottom: 10px
+		border: 1px solid #3b5998
+		border-radius: 4px
+		padding: 5px 18px
+
+	.tooltips
+		position: relative
+
+
+.footer-top
+	background: url(../img/headerbg.png) repeat-x
+	background-size: cover
+	height: 82px
+	.top__flex
+		padding: 20px
+		.social 
+			padding-top: 5px
+
+	.phone-number__footer
+		text-align: right
+		a
+			color: $link-color_header
+			font-size: 16px
+			span
+				font-size: 26px
+				margin-left: 5px
+
+.footer-sub
+	background-color: #3d3e3e
+	color: $link-color_header
+	text-align: center
+	padding: 10px 0
+	font-size: 14px
+
+.social
+	display: flex
+	.fb, .vk, .youtube, .inst
+		background: url(../img/icons.png) -39px -27px
+		display: block
+		width: 30px
+		height: 30px
+		margin-right: 10px
+		&:hover
+			background: url(../img/sprites-hover.png) -88px 2px no-repeat
+			transition: 0.5s
+	.vk
+		background: url(../img/icons.png) -3px -49px
+		&:hover
+			background: url(../img/sprites-hover.png) -2px 2px no-repeat
+			transition: 0.5s
+	.youtube
+		background: url(../img/icons.png) -75px -48px
+		&:hover
+			background: url(../img/sprites-hover.png) -46px 2px no-repeat
+			transition: 0.5s	
+	.inst
+		background: url(../img/icons.png) -3px -3px
+		&:hover
+			background: url(../img/sprites-hover.png) -123px 2px no-repeat
+			transition: 0.5s
+
+.sticky-content.fixed
+	position: fixed
+	top: -10px
+	left: 0
+	right: 0
+	z-index: 999
+	opacity: 0.8
+    transition: 2s
+	a
+    	color: black
+    	transition: 2s
+
+.hidden-menu
+	display: none
+	background-color: rgba(0, 0, 0, 0.8)
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index: 101
+	top: 0
+	left: 0
+	ul
+		margin: 0
+		padding: 0
+		text-align: center
+		height: 100%
+		display: flex;
+		flex-flow: column nowrap
+		justify-content: center
+		align-items: stretch
+		align-content: stretch
+		li
+			margin-bottom: 30px
+			&:hover
+				background-color: rgba(255, 0, 0, .9)
+				transition: 1s
+			a
+				display: inline-block
+	  			margin: 20px auto
+				color: #fff
+
+.modal__window
+	display: none
+	background-color: rgba(0, 0, 0, 0.8)
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index: 101
+	top: 0
+	left: 0
+	.modal__group
+		max-width: 500px
+		margin: 50px auto
+		border: 2px solid silver
+		border-radius: 20px
+		padding: 50px 23px 0
+		height: 420px
+		.submit
+			margin: 37px 37px 0px
+	.btn-close
+		display: block
+		background: url(../img/icon-close.png)
+		width: 50px
+		height: 50px
+		position: fixed
+		left: 2%
+		top: 2%
+		z-index: 102
+		cursor: pointer	
+.btn-menu
+  display: none
+  text-align: center
+  width: 40px
+  height: 40px
+  line-height: 60px
+  background: url(../img/icons.png) -80px 4px
+  color: #4D8C6C
+  cursor: pointer
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 102
+  font-size: 30px
+  -moz-transition: all 0.35s ease 0s
+  -o-transition: all 0.35s ease 0s
+  -webkit-transition: all 0.35s ease 0s
+  transition: all 0.35s ease 0s
+
+.tooltiptext__name
+	@include_tooltips
+	&:after
+		@include_tooltipsarows
+		left: 100%
+		top: 51%
+
+.tooltiptext__phone
+	@include_tooltips
+	top: 0%
+	&:after
+		@include_tooltipsarows
+		left: 100%
+		top: 50%
+
+.tooltips-name
+	&:hover .tooltiptext__name
+		visibility: visible
+		
+.tooltips-phone
+	&:hover .tooltiptext__phone
+		visibility: visible
+
+.tooltiptext__email
+	@include_tooltips
+	left: 110%
+	&:after
+		@include_tooltipsarows
+		left: -8%
+		top: 51%
+		border-color: transparent black transparent transparent;
+
+.tooltiptext__birthday
+	@include_tooltips
+	left: 110%
+	top: 0%
+	&:after
+		@include_tooltipsarows
+		left: -8%
+		top: 51%
+		border-color: transparent black transparent transparent;
+
+.tooltips-email
+	&:hover .tooltiptext__email
+		visibility: visible
+
+.tooltips-birthday
+	&:hover .tooltiptext__birthday
+		visibility: visible
+
+
+@import "media" // Всегда в конце

@@ -1,0 +1,135 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1000px)
+	.container-inner
+		padding: 0 10px
+	.header-list
+		ul
+			li
+				padding: 5px 20px
+				border: 0
+	.tooltips-name
+		&:hover .tooltiptext__name
+			visibility: hidden
+	.tooltips-phone
+		&:hover .tooltiptext__phone
+			visibility: hidden
+	.tooltips-email
+		&:hover .tooltiptext__email
+			visibility: hidden
+
+	.tooltips-birthday
+		&:hover .tooltiptext__birthday
+			visibility: hidden
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.conteiner-item
+		.img-responsive
+			margin: 0 auto		
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 665px)
+	.submit
+		width: 200px
+		font-size: 14px
+		padding: 2px 2px
+	.top__flex
+		display: none
+	.sticky-content.fixed
+		top: -10px
+	.container-fluid
+		padding-top: 0px
+	.conteiner-coach
+		background: none
+	.trainer
+		margin: 0
+	.contact__social
+		display: flex
+		justify-content: center
+		.col__logo
+			display: none
+		.col__phone
+			display: none
+	.btn-menu
+		display: block
+	.header-list
+		display: none
+	.conteiner-title
+		.title__modal
+			width: 300px
+			margin: 0 auto
+			padding: 0
+
+	.conteiner-features
+		.btn
+			width: 200px
+			a
+				font-size: 12px
+				width: 200px
+			
+			&:after
+				display: none
+			&:before
+				display: none
+	.conteiner-item
+		p
+			font-size: 24px
+	.benefit
+		h2
+			margin: 10px 0
+	.fieldset
+		padding: 0
+		.btn
+			width: 200px
+			a
+				width: 200px
+				font-size: 12px
+		#user_birthday, #user_email, #user_name, #user_phone
+			width: 300px
+	
+	.modal__window
+		.modal__group
+			width: 320px
+			#user_name, #user_birthday, #user_email, #user_phone
+				width: 270px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

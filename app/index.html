@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>18camel</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#6dabbe">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#99dde8">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#bff6f9">
+
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+
+	<!-- begin container-fluid -->
+	<div class="container-fluid">
+		<!-- begin header -->
+		<header class="header-top" id="head">
+			<div class="container-inner">
+				<div class="top__flex">
+					<div class="logo">
+						<a href="#"><img src="img/Logo_header.png" alt="logo" class="img-responsive"></a>
+					</div>
+					<div class="phone-number">
+						<a href="#">(044)<span>237 89 90</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="sticky" class="sticky-element">    		
+			<div class="sticky-anchor"></div>
+			<div class="sticky-content">     	
+				<header class="header-sub">	
+					<div class="container-inner">
+						<nav class="header-list">
+							<ul>
+								<li><a href="#head" rel='m_PageScroll2id'>Главная</a></li>
+								<li class="important__link"><a href="#programs" rel='m_PageScroll2id'>Учебные программы</a></li>
+								<li><a href="#expert" rel='m_PageScroll2id'>Эксперты</a></li>
+								<li><a href="#learn" rel='m_PageScroll2id'>База знаний</a></li>
+								<li><a href="#contact" rel='m_PageScroll2id'>Контакты </a></li>
+							</ul>
+						</nav>
+
+						<!-- begin hidden menu -->
+						<span class="btn-menu"></span>
+			            <nav class="hidden-menu">
+			                <ul>
+			                   <li><a href="#" rel='m_PageScroll2id'>Главная</a></li>
+								<li class="important__link"><a href="#programs" rel='m_PageScroll2id'>Учебные программы</a></li>
+								<li><a href="#expert" rel='m_PageScroll2id'>Эксперты</a></li>
+								<li><a href="#learn" rel='m_PageScroll2id'>База знаний</a></li>
+								<li><a href="#contact" rel='m_PageScroll2id'>Контакты </a></li>
+			                </ul>
+			            </nav>
+						<!-- end hidden menu -->
+
+						<!-- begin modal__window -->
+						<div class="modal__window">
+							<div class="form-group modal__group" id="form">
+								<fieldset class="fieldset">
+									<form action="submit.php" id="registration" method="POST">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="tooltips tooltips-name">
+													<input type="text" name="name" placeholder="Ваше ФИО" required id="user_name" class="user-name">
+												</div>
+												<div class="tooltips tooltips-phone">
+													<input type="number" name="phone" placeholder="Ваш Телефон" id="user_phone" class="user-phone" title="Телефон в международном формате +380ххххххххх" data-validation="number" data-validation-error-msg="Используйте только цифры">
+												</div>
+											</div>
+											<div class="col-md-12 tooltips">
+												<div class="tooltips tooltips-email">
+													<input type="email" name="email" placeholder="Email" required id="user_email" data-validation="email" data-validation-error-msg="Пожалуйста,введите корректный адрес в формате xx@xx.xx">
+												</div>
+												<div class="tooltips tooltips-birthday ">
+													<input type="text" name="birthday" placeholder="Дата Рождения" id="user_birthday" data-validation="birthdate" data-validation-format="dd/mm/yyyy" data-validation-error-msg="Пожалуйста,введите дату Вашего рождения в формате dd/mm/yyyy">
+												</div>
+											</div>
+										</div>
+										<input type="submit" value="Записаться на семинар" class="submit">
+										<span class="btn-close modal"></span>
+									</form>
+								</fieldset>
+							</div>
+						</div>
+						<!-- end modal__window -->
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<!-- end header -->
+
+		<!-- begin conteiner-title -->
+		<div class="conteiner-title">
+			<div class="container-inner">
+				<div class="title__modal">
+					<h1>Семинар <span>Волшебный пинок</span></h1>
+					<p class="data">Киев, 7.03 2017</p>
+					<p class="time">19:00 – 23:00,<span>200 грн</span></p>
+					<input type="submit" value="Записаться на семинар" class="submit modal">
+				</div>
+			</div>
+		</div>
+		<!-- end conteiner-title -->
+
+		<!-- begin conteiner-item -->
+		<div class="conteiner-item">
+			<div class="container-inner">
+			<div class="row">
+				<div class="col-md-6 col-sm-4 wow slideInLeft" data-wow-offset="100">
+					<img src="img/inner.png" alt="winner" class="img-responsive">
+				</div>
+				<div class="col-md-6 col-sm-8">
+					<p>Этот семинар поможет Вам замотивировать себя и вдохновить свою команду</p>
+				</div>
+			</div>
+				
+			</div>
+		</div>
+		<!-- end conteiner-item -->
+
+		<!-- begin conteiner-benefit -->
+		<div class="conteiner-benefit">
+			<div class="container-inner">
+			<div class="row">
+				<div class="col-md-12 benefit">
+					<h2>Какую пользу вы получите? </h2>
+					<ul class="list__benefit">
+						<li><i></i>Сможете сдвинуть себя с мертвой точки</li>
+						<li><i></i>Начнете делать то, до чего раньше не доходили руки</li>
+						<li><i></i>Вы будете эффективней работать, заниматься спортом и даже отдыхать</li>
+						<li><i></i>Вам больше не будет страшно ставить перед собой высокие цели</li>
+						<li><i></i>Узнаете, что нельзя делать и говорить, если ты – ЛИДЕР</li>
+						<li><i></i>Легко объединять людей вокруг своей идеи</li>
+					</ul>
+				</div>
+			</div>
+				
+			</div>
+		</div>
+		<!-- end conteiner-benefit -->
+
+		<!-- begin conteiner-features -->
+		<div class="conteiner-features" id="programs">
+			<div class="container-inner">
+				<h2>Особенности тренинга </h2>
+				<div class="row">
+					<div class="col-md-3 flexible wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-offset="10">
+						<div class="img__clock"></div>
+						<p><span>Динамичность </span>семинара зашкаливает,4 часа пролетят на одном дыхании</p>
+					</div>
+					<div class="col-md-3 flexible wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10">
+						<div class="img__export"></div>
+						<p>Вы будете не только слушать, а еще <span>говорить, делать, доказывать</span></p>
+					</div>
+					<div class="col-md-3 flexible wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s" data-wow-offset="10">
+						<div class="img__users"></div>
+						<p>Вам будет под силу самостоятельно <span>раздать пинки целой команде</span></p>
+					</div>
+					<div class="col-md-3 flexible wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="10">
+						<div class="img__eye"></div>
+						<p>Этот семинар трудно описать словами, <span>лучше один раз его пережить</span></p>
+					</div>
+				</div>
+				<input type="submit" value="Записаться на семинар" class="submit modal">
+			</div>
+		</div>
+		<!-- end conteiner-features -->
+
+		<!-- begin conteiner-structure -->
+		<div class="conteiner-structure" id="learn">
+			<div class="container-inner">
+				<h2>Структура семинара</h2>
+				<div class="row">
+					<div class="col-md-3 flexible wow zoomIn" data-wow-delay="0.5s" data-wow-offset="10">
+						<div class="click"></div>
+						<p>Приходим,раздаем и получаем Волшебные пинки</p>
+					</div>
+					<div class="col-md-3 flexible wow zoomIn" data-wow-delay="1s" data-wow-offset="10">
+						<div class="people"></div>
+						<p>Работаем в сплоченной одной целью команде</p>
+					</div>
+					<div class="col-md-3 flexible wow zoomIn" data-wow-delay="1.5s" data-wow-offset="10">
+						<div class="case"></div>
+						<p>Приходи в восторг от секретных приемов самомотивации</p>
+					</div>
+					<div class="col-md-3 flexible wow zoomIn" data-wow-delay="2s" data-wow-offset="10">
+						<div class="rocket"></div>
+						<p>Уходим..заряженные, уверенные в себе и вдохновленные на новые победы</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end conteiner-structure -->
+
+		<!-- begin conteiner-coach -->
+		<div class="conteiner-coach" id="expert">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-md-12 trainer wow fadeInRight" data-wow-delay="2s">
+						<h2>тренер семинара</h2>
+						<p>Натали Василенко </p>
+						<ul>
+							<li>Кандидат филологических наук</li>
+							<li>Политтехнолог</li>
+							<li>Журналист</li>
+							<li>Преподаватель филологии КНУ им. Тараса Шевченко</li>
+							<li>Сотрудник аппарата Верховного Совета Украины </li>
+							<li>Тренер по эффективной коммуникации </li>
+							<li>Автор курсов по Психологии Лидерства</li>
+							<li>Основатель университета лидерства<span>WinslanD</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end conteiner-coach -->
+
+		<!-- begin conteiner-form -->
+		<div class="conteiner-form">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>регистрация</h2>
+						<p>Укажите в анкете достоверные данные* и отправьте на регистрацию.После утверждения анкеты на Ваш Email придет письмо с реквизитами для оплаты.</p>
+					</div>
+				</div>
+				<div class="form-group" id="form">
+					<fieldset class="fieldset">
+						<form action="submit.php" id="registration" method="POST">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="tooltips tooltips-name">
+										<input type="text" name="name" placeholder="Ваше ФИО" required id="user_name" class="user-name">
+										<span class="tooltiptext__name">"Ваше Ф.И.О"</span>
+									</div>
+									<div class="tooltips tooltips-phone">
+										<input type="number" name="phone" placeholder="Ваш Телефон" id="user_phone" class="user-phone" title="Телефон в международном формате +380ххххххххх" data-validation="number" data-validation-error-msg="Используйте только цифры">
+										<span class="tooltiptext__phone">"+380ххххххххх"</span>
+									</div>
+								</div>
+								<div class="col-md-6 tooltips">
+									<div class="tooltips tooltips-email">
+										<input type="email" name="email" placeholder="Email" required id="user_email" data-validation="email" data-validation-error-msg="Пожалуйста,введите корректный адрес в формате xx@xx.xx">
+										<span class="tooltiptext__email">" xx@xx.xx "</span>
+									</div>
+									<div class="tooltips tooltips-birthday ">
+										<input type="text" name="birthday" placeholder="Дата Рождения" id="user_birthday" data-validation="birthdate" data-validation-format="dd/mm/yyyy" data-validation-error-msg="Пожалуйста,введите дату Вашего рождения в формате dd/mm/yyyy">
+										<span class="tooltiptext__birthday">" дд/мм/гггг "</span>
+									</div>
+
+								</div>
+							</div>
+							<p class="form-text">
+								*Вся записанная Вами информация является конфиденциальной. Данные нужны для внутренней статистики и разглашению не подлежат. Администрация имеет право отказать в обучении без объяснения причин.
+							</p>
+							<input type="submit" value="Записаться на семинар" class="submit">
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<!-- end conteiner-form -->
+
+		<!-- begin footer -->
+		<footer class="footer-top" id="contact">
+			<div class="container-inner">
+				<div class="top__flex contact__social">
+					<div class="col__logo">
+						<img src="img/footerlogo.png" alt="footer-logo">
+					</div>
+					<div class="col">
+						<div class="social">
+							<a href="#"><i class="fb"></i></a>
+							<a href="#"><i class="vk"></i></a>
+							<a href="#"><i class="youtube"></i></a>
+							<a href="#"><i class="inst"></i></a>
+						</div>
+					</div>
+					<div class="col__phone">
+						<div class="phone-number__footer">
+							<a href="#">(044)<span>237 89 90</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<footer class="footer-sub">
+			<div class="copyright">2017. Все права защищены</div>
+		</footer>	
+		<!-- end footer -->
+		
+	</div>
+	<!-- end container-fluid -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/PageScroll2id.min.js"></script>
+	<script src="js/common.min.js"></script>
+	<script>
+      $.validate({
+        modules : 'date'
+  });
+
+	new WOW().init();
+
+	</script>
+
+</body>
+</html>
